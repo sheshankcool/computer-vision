@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>This is a demo using an HTML Template</head>
+<body bgcolor="pink">
+	
+	<form action="{{url_for('calculate')}}" method="POST">
+	<input type="text" name="Hindi" placeholder="Hindi"><br><br>
+	<input type="text" name="Telugu" placeholder="Telugu"><br><br>
+	<input type="text" name="English" placeholder="English"><br><br>
+	<input type="text" name="Maths" placeholder="Maths"><br><br>
+	<input type="text" name="Science" placeholder="Science"><br><br>
+	<input type="text" name="Social" placeholder="Social"><br><br>
+	<button type="submit" class="btn btn-primary btn-block btn-primary">Submit</button>
+	</form>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 Total Marks>
+    {{values}}	
+</html>
